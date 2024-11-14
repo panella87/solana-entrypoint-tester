@@ -29,6 +29,12 @@ your.ip.addr.h    |  1802 | *****xp5nJKdqFq1KeY*****Mph8A*****nyba6***** | 1.18.
 other1.ip.addr.h  |    58 | *****JPUu9w5jEFxaW6*****AJ3gh*****KMCxv***** |    -    | 8000 |  8005 | 8003 | 8004 | 8001 | 8002 | 8008 | 50093
 other2.ip.addr.h  |    58 | *****uwEyDPKckw3wEF*****gxMw8*****6doxF***** |    -    | 8001 |  8006 | 8004 | 8005 | 8002 | 8003 | 8009 | 50093
 ```
+### Step 1.1: Using known endpoint
+To use a known endpoint you can start from https://api.mainnet-beta.solana.com/
+- Ping the address and save the IP address
+- Run "solana-gossip spy --entrypoint xxx.xxx.xxx.xxx:8000"
+- If fails try port 8001, 8002
+- If all fails search for another endpoint online
 
 ### Step 2: Generate an `entrypoints.txt` File
 From the output, create a plain text file named `entrypoints.txt` with each line formatted as `IP:Gossip_Port` without any header.
