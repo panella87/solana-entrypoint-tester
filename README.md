@@ -8,15 +8,17 @@ This tool is designed to help you identify the best entrypoints to configure in 
 
 ## How to Use
 
-### Step 1: General lookup or known Entrypoint
+### Step 1: Getting the entrypoint list
 To begin you need to fetch a list of additional entrypoints IP and Ports. Use the command:
 ```bash
-solana gossip                                // General lookup
-solana-gossip spy --entrypoint <IP:PORT>     // Known Endpoint
+solana gossip                               // General lookup
+solana gossip -u https://proider/key        // General lookup with specific RPC URL
+solana-gossip spy --entrypoint <IP:PORT>    // Known Endpoint
 ```
 Example:
 ```bash
 solana gossip
+solana gossip -u https://go.getblock.io/1cbdabf43c894f5090f573586a1fbc89
 solana-gossip spy --entrypoint mainnet.rpcpool.com:8001
 ```
 
