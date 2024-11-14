@@ -1,4 +1,4 @@
-# Solana Entrypoint Validator Tool
+# Solana Entrypoint Tester
 
 This tool is designed to help you identify the best entrypoints to configure in your Solana validator by testing multiple entrypoints, measuring connection success, and logging response times. The results can be used to configure optimal `--entrypoint` parameters for `solana-validator` setup.
 
@@ -41,6 +41,7 @@ From the output, create a plain text file named `entrypoints.txt` with each line
 Execute the `test_entrypoints.sh` script to test each entrypoint listed in `entrypoints.txt`.
 
 ```bash
+chmod +x test_entrypoints.sh
 ./test_entrypoints.sh
 ```
 
