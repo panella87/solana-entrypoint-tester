@@ -8,13 +8,15 @@ This tool is designed to help you identify the best entrypoints to configure in 
 
 ## How to Use
 
-### Step 1: Choose a Known Entrypoint
-To begin, you need a working entrypoint (either public, free, or paid) that allows you to fetch a list of additional entrypoints. Use the command:
+### Step 1: General lookup or known Entrypoint
+To begin you need to fetch a list of additional entrypoints IP and Ports. Use the command:
 ```bash
-solana-gossip spy --entrypoint <IP:PORT>
+solana gossip                                // General lookup
+solana-gossip spy --entrypoint <IP:PORT>     // Known Endpoint
 ```
 Example:
 ```bash
+solana gossip
 solana-gossip spy --entrypoint mainnet.rpcpool.com:8001
 ```
 
