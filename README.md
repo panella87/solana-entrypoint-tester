@@ -62,7 +62,7 @@ The results will be saved in `entrypoints.log` with the following format:
 ```plaintext
 IP;SUCCESS;PING
 1.1.1.1:8000;true;100
-185.28.32.66:8001;
+185.28.32.66:8001;false;
 192.168.0.1:8001;true;150
 ```
 
